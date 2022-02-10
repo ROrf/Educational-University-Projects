@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome Page</title>
+        <script src="jslibs/jquery-2.1.4.min.js"></script>
+        <script src="navBar.js"></script>
+        <link href="navBar.css" rel="stylesheet" type="text/css">
+        <link href="general.css" rel="stylesheet" type="text/css">
+        <style>
+            #siteTitle {
+                font-size: 3em;
+                text-align: center;
+                text-decoration: underline;
+            }
+            #NFC_Logo {
+                max-height: 25em;
+                max-width: 25em;
+                display: block;
+                margin: 1em auto;
+            }
+            #summaryInfo {
+                font-size: 2em;
+                font-weight: bold;
+                border: .5em ridge #013369;
+                background-color: white;
+                padding: .5em;
+            }
+        </style>
+    </head>
+    <body onload="addCurrent('homePage')">
+        <div id="welcomePageMain">
+            <h1 id="siteTitle">Welcome to More NFC Info!</h1>
+            <img id="NFC_Logo" src="NFC_Logo.png" alt="NFC Logo">
+            <p id="summaryInfo">Welcome to More NFC Info! The NFC stands for the National Football Conference. The NFL, or National Football League, is comprised of two conferences: the NFC and the AFC. Having grown up in St. Louis, I grew up a Rams fan. I am also a dedicated fan of the Green Bay Packers. Since both of these teams are in the NFC, I thought it would be a good idea to educate people on the conference and the 16 teams in the NFC. In order to view this information, please Log In!</p>
+        </div>
+    </body>
+</html>

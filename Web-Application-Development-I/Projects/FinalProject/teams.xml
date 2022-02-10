@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<teams>
+    <team>
+        <name>Chicago Bears</name>
+        <city>Chicago, IL</city>
+        <division>NFC North</division>
+        <year>1920</year>
+        <stadium>Soldier Field</stadium>
+        <superbowls>1</superbowls>
+        <coach>Matt Nagy</coach>
+        <gm>Ryan Pace</gm>
+        <owner>Virginia Halas McCaskey</owner>
+    </team>
+    <team>
+        <name>Detroit Lions</name>
+        <city>Detroit, MI</city>
+        <division>NFC North</division>
+        <year>1930</year>
+        <stadium>Ford Field</stadium>
+        <superbowls>0</superbowls>
+        <coach>Darrell Bevell</coach>
+        <gm>Vacant</gm>
+        <owner>Sheila Ford Hamp</owner>
+    </team>
+    <team>
+        <name>Green Bay Packers</name>
+        <city>Green Bay, WI</city>
+        <division>NFC North</division>
+        <year>1919</year>
+        <stadium>Lambeau Field</stadium>
+        <superbowls>4</superbowls>
+        <coach>Matt LaFleur</coach>
+        <gm>Brian Gutekunst</gm>
+        <owner>Green Bay Packers, Inc.</owner>
+    </team>
+    <team>
+        <name>Minnesota Vikings</name>
+        <city>Minneapolis, MN</city>
+        <division>NFC North</division>
+        <year>1960</year>
+        <stadium>U.S. Bank Stadium</stadium>
+        <superbowls>0</superbowls>
+        <coach>Mike Zimmer</coach>
+        <gm>Rick Spielman</gm>
+        <owner>Leonard Zygi and Mark Wilf</owner>
+    </team>
+    <team>
+        <name>Atlanta Falcons</name>
+        <city>Atlanta, GA</city>
+        <division>NFC South</division>
+        <year>1965</year>
+        <stadium>Mercedes-Benz Stadium</stadium>
+        <superbowls>0</superbowls>
+        <coach>Raheem Morris</coach>
+        <gm>Vacant</gm>
+        <owner>Arthur Blank</owner>
+    </team>
+    <team>
+        <name>Carolina Panthers</name>
+        <city>Charlotte, NC</city>
+        <division>NFC South</division>
+        <year>1993</year>
+        <stadium>Bank of America Stadium</stadium>
+        <superbowls>0</superbowls>
+        <coach>Matt Rhule</coach>
+        <gm>Marty Hurney</gm>
+        <owner>David Tepper</owner>
+    </team>
+    <team>
+        <name>New Orleans Saints</name>
+        <city>New Orleans, LA</city>
+        <division>NFC South</division>
+        <year>1966</year>
+        <stadium>Mercedes-Benz Superdome</stadium>
+        <superbowls>1</superbowls>
+        <coach>Sean Payton</coach>
+        <gm>Mickey Loomis</gm>
+        <owner>Gayle Benson</owner>
+    </team>
+    <team>
+        <name>Tampa Bay Buccaneers</name>
+        <city>Tampa Bay, FL</city>
+        <division>NFC South</division>
+        <year>1974</year>
+        <stadium>Raymond James Stadium</stadium>
+        <superbowls>1</superbowls>
+        <coach>Bruce Arians</coach>
+        <gm>Jason Licht</gm>
+        <owner>Glazer Family</owner>
+    </team>
+    <team>
+        <name>Dallas Cowboys</name>
+        <city>Dallas, TX</city>
+        <division>NFC East</division>
+        <year>1960</year>
+        <stadium>ATandT Stadium</stadium>
+        <superbowls>5</superbowls>
+        <coach>Mike McCarthy</coach>
+        <gm>Jerry Jones</gm>
+        <owner>Jerry Jones</owner>
+    </team>
+    <team>
+        <name>New York Giants</name>
+        <city>New York City, NY</city>
+        <division>NFC East</division>
+        <year>1925</year>
+        <stadium>MetLife Stadium</stadium>
+        <superbowls>4</superbowls>
+        <coach>Joe Judge</coach>
+        <gm>Dave Gettleman</gm>
+        <owner>John Mara and Steve Tisch</owner>
+    </team>
+    <team>
+        <name>Philadelphia Eagles</name>
+        <city>Philadelphia, PA</city>
+        <division>NFC East</division>
+        <year>1933</year>
+        <stadium>Lincoln Financial Field</stadium>
+        <superbowls>1</superbowls>
+        <coach>Doug Pederson</coach>
+        <gm>Howie Roseman</gm>
+        <owner>Jeffrey Lurie</owner>
+    </team>
+    <team>
+        <name>Washington Football Team</name>
+        <city>Washington D.C.</city>
+        <division>NFC East</division>
+        <year>1932</year>
+        <stadium>FedExField</stadium>
+        <superbowls>3</superbowls>
+        <coach>Ron Rivera</coach>
+        <gm>Ron Rivera</gm>
+        <owner>Daniel Snyder</owner>
+    </team>
+    <team>
+        <name>Arizona Cardinals</name>
+        <city>Phoenix, AZ</city>
+        <division>NFC West</division>
+        <year>1898</year>
+        <stadium>State Farm Stadium</stadium>
+        <superbowls>0</superbowls>
+        <coach>Kliff Kingsbury</coach>
+        <gm>Steve Keim</gm>
+        <owner>Michael Bidwill</owner>
+    </team>
+    <team>
+        <name>Los Angeles Rams</name>
+        <city>Los Angeles, CA</city>
+        <division>NFC West</division>
+        <year>1936</year>
+        <stadium>SoFi Stadium</stadium>
+        <superbowls>1</superbowls>
+        <coach>Sean McVay</coach>
+        <gm>Les Snead</gm>
+        <owner>Stan Kroenke</owner>
+    </team>
+    <team>
+        <name>San Francisco 49ers</name>
+        <city>Santa Clara, CA</city>
+        <division>NFC West</division>
+        <year>1944</year>
+        <stadium>Levi's Stadium</stadium>
+        <superbowls>5</superbowls>
+        <coach>Kyle Shanahan</coach>
+        <gm>John Lynch</gm>
+        <owner>Denise DeBartolo York</owner>
+    </team>
+    <team>
+        <name>Seattle Seahawks</name>
+        <city>Seattle, WA</city>
+        <division>NFC West</division>
+        <year>1974</year>
+        <stadium>Lumen Field</stadium>
+        <superbowls>1</superbowls>
+        <coach>Pete Carroll</coach>
+        <gm>John Schneider</gm>
+        <owner>Jody Allen</owner>
+    </team>
+</teams>
