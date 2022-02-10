@@ -1,7 +1,6 @@
 **************************************
 *
 * Name: Ryan Orf
-* PawPrint ID: rconzc
 * Date: 04/14/21
 * Lab5
 *
