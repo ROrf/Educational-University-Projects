@@ -1,0 +1,1 @@
+Web Application Development I taught how to code websites using HTML, CSS, JavaScript, HTML DOM, JQuery, AJAX, XML, MySQL, and PHP. Some assignments were run on an AWS instance.
