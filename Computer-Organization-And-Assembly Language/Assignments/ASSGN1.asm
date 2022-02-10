@@ -1,8 +1,6 @@
 ********************************************
 *
 * Name: Ryan Orf
-* Pawprint: rconzc
-* Student#: 18188568
 * Due Date: 02/12/21
 *
 * This program will add data1 and data3 and subtract data2
