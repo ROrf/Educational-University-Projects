@@ -1,0 +1,33 @@
+<!--
+    name: Ryan Orf
+    pawprint: rconzc
+    date: Novemeber 2, 2020
+    Challenge PHP F20
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RconzcPHPF20</title>
+        <script src="jslibs/jquery-2.1.4.min.js"></script>
+        <script src="RconzcChallenge8.js"></script>
+        <link rel="stylesheet" type="text/css" href="RconzcChallenge8.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            PHP Playground
+        </div>
+        <form>
+            <label for="dropDown" id="selectLabel">Form Selector:</label>
+            <select id="dropDown" name="dropDown" onchange="selectFxn(this)">
+                <option value="disabled" disabled selected>Select a Function</option>
+                <option value="name">Name</option>
+                <option value="hammingNumber">Hamming Number</option>
+                <option value="passwordSim">Password Simulation</option>
+                <option value="listCreator">List Creator</option>
+                <option value="cylinderSA">Cylinder Surface Area</option>
+            </select>
+            <a id="link" href="../Challenge7/RconzcProjectsF20.html">Back to Projects</a>
+        </form>
+    </body>
+</html>

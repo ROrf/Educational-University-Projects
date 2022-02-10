@@ -1,0 +1,73 @@
+<!--
+    Name: Ryan Orf
+    Pawprint: rconzc
+    Date: September 25, 2020
+    Challenge: Flex Box F20
+-->
+<!DOCTYPE html>
+
+<html lang = "en">
+    
+    <head>
+        
+        <meta charset = "utf-8">
+        
+        <title>RconzcProjectsF20</title>
+        <script src="jslibs/jquery-2.1.4.min.js"></script>
+        <script src="navbar.js"></script>
+        <!-- Font is the same I used from the last challenge, which can be found using the link in the href, which I will also copy below:
+        https://fonts.google.com/specimen/Josefin+Sans
+        -->
+        <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="flexbox.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+    </head>
+    
+    <body onload="addCurrent('projects')">
+
+        <div class="container">
+            
+            <div class="card" id="videogames">
+                <img src="scorpion.gif" alt="scorpion">
+                <div class="txt">
+                    <span class="title">Videogames</span>
+                    <p class="desc">Do you love videogames? Follow this link to access thousands of free games!</p>
+                    <!-- I currently have no projects, so I just linked the links to the Skills page. I saw that we will change these links later -->
+                    <a class="link">Visit</a>
+                </div>
+            </div>
+            
+            <div class="card" id="fantasy">
+                <img src="neuschwanstein.jpg" alt="castle">
+                <div class="txt">
+                    <span class="title">Fantasy</span>
+                    <p class="desc">Do you wish fantasy was a reality? This app shows you pictures of fantastical places in real life!</p>
+                    <a class="link">Visit</a>
+                </div>
+            </div>
+            
+            <div class="card" id="toDoList">
+                <img src="toDoList.jpg" alt="toDoList">
+                <div class="txt">
+                    <span class="title">To-Do List</span>
+                    <p class="desc">Click on the link below to view my To-Do List challenge, where I attempted to make a dynamic To-Do List for chores!</p>
+                    <a href="RconzcToDoListF20.html" class="link">Visit</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- The nav bar was created using the tags <div> and <a>. This idea was borrowed from: https://www.w3schools.com/howto/howto_js_topnav.asp 
+        -->
+         <!-- <div id="navbar" class="clear">
+            <a href="RconzcWebServersF20.html" class="name">Ryan Orf</a>
+            <a href="RconzcColumnsF20.html" class="name">Skills</a>
+            <a href="RconzcTablesF20.html" class="name">Classes Taken</a>
+            <a href="RconzcProjectsF20.html" class="name" id="current">Projects</a>
+        </div> -->
+        <!-- reference code end -->
+        
+    </body>
+    
+</html>

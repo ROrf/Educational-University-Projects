@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--
+    Name: Ryan Orf
+    Pawprint: rconzc
+    Date: September 11, 2020
+    Challenge: Multi-Column Layout F20
+-->
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title>RconzcColumnsF20</title>
+        <script src="jslibs/jquery-2.1.4.min.js"></script>
+        <script src="navbar.js"></script>
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <style>
+            
+            h3 {
+                text-align: center;
+                color: lime;
+                font-family: fantasy;
+                font-size: 48px;
+                margin: 5px;
+            }
+            
+            #mainWrapper {
+                margin: 0 auto;
+                margin-top: 80px;
+                width: 1128px;
+                border: 6px solid lime;
+                border-radius: 5%;
+                padding: 8px;
+                background-color: darkred;
+                font-size: 14px;
+            }
+            
+            .leftColumn {
+                float: left;
+                width: 247px;
+                padding: 18px;
+                margin: 18px;
+                height: 433px;
+                border: 7px solid lime;
+                border-radius: 3%;
+                background-color: orange;
+                font-family: sans-serif;
+                color: aliceblue;
+            }
+            
+            #rowWrapper {
+                float: left;
+                width: 449px;
+                margin: 18px;
+            }
+            
+            .topRow {
+                width: 375px;
+                height: 198px;
+                padding: 25px;
+                border: 7px solid lime;
+                border-radius: 3%;
+                margin-bottom: 25px;
+                background-color: blue;
+                font-family: sans-serif;
+                color: aliceblue;
+            }
+            
+            .bottomRow {
+                width: 375px;
+                height: 132px;
+                padding: 25px;
+                border: 7px solid lime;
+                border-radius: 3%;
+                background-color: goldenrod;
+                font-family: sans-serif;
+                color: aliceblue;;
+            }
+            
+            .rightColumn {
+                float: left;
+                width: 224px;
+                padding: 18px;
+                margin: 18px;
+                height: 433px;
+                border: 7px solid lime;
+                border-radius: 3%;
+                background-color: purple;
+                font-family: sans-serif;
+                color: aliceblue;
+            }
+            
+            #mainWrapper h4 {
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .clear:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            hr {
+                border-top: 2px solid;
+            }
+            
+            /*.name {
+                font-size: 30px;
+                font-family: cursive;
+                color: crimson;
+            }
+            
+            #navbar {
+                background-color: gold;
+                width: 100%;
+                position: fixed; 
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                padding: 0px;
+
+            }*/
+            
+            /* Floating each hyperlink left in the nav bar, setting text-decoration to none, setting text-align to center, and the padding for each a within the id nav bar was borrowed from:
+            https://www.w3schools.com/howto/howto_js_topnav.asp
+            */
+            /*#navbar a {
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }*/
+            /* reference code end */
+            
+           /* The pseudo-class hover and changing both the background-color and color when a "button" is hovered over was borrowed from:
+            https://www.w3schools.com/howto/howto_js_topnav.asp
+            */
+            /*#navbar a:hover {
+                background-color: aliceblue;
+                color: rebeccapurple;
+            }*/
+            /* reference code end */
+            
+            /*.current {
+                background-color: rebeccapurple;
+                color: aliceblue;
+            }
+            
+            .clear:after {
+                content: "";
+                display: table;
+                clear: both;
+            } */
+        </style>
+        
+    </head>
+    
+    <body onload="addCurrent('skills')">
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id="mainWrapper" class="clear">
+            
+            <h3>Skills</h3>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+                 
+                 Physical left column width =
+                    247px -> content width
+                     36px -> padding (18px left, 18px right)
+                     14px -> border (7px left, 7px right)
+                 +   36px -> margin (18px left, 18px right)
+                ___________
+                    333px
+
+            -->
+            <div class="leftColumn">
+                
+                <h4>Languages</h4>
+                
+                <hr>
+                
+                <ul>
+                    
+                    <li>Java</li>
+                    
+                    <li>C</li>
+                    
+                    <li>HTML, CSS (Currently Learning)</li>
+                    
+                </ul>
+                
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            <!-- Put middle column physical width calculations here:
+
+                 Physical middle column width =
+                    449px -> content width
+                 +   36px -> margin (18px left, 18px right)
+                ___________
+                    485px
+
+            -->
+            <div id="rowWrapper">
+                
+                <div class="topRow">
+                    
+                    <h4>Coursework</h4>
+                    
+                    <hr>
+                    
+                    <ul>
+                        
+                        <li>Introduction to Computer Science</li>
+                        
+                        <li>Algorithm Design and Programming I</li>
+                        
+                        <li>Algorithm Design and Programming II</li>
+                        
+                        <li>Introduction to Logic Systems</li>
+                        
+                        <li>Advanced Algorithm Design (Currently Enrolled)</li>
+                        
+                        <li>Web Application Development I (Currently Enrolled)</li>
+                        
+                    </ul>
+                    
+                </div>
+            
+                <div class="bottomRow">
+                    
+                    <h4>Other</h4>
+                    
+                    <hr>
+                    
+                    <ul>
+                        
+                        <li>CS1050 TA</li>
+                        
+                        <li>Code Ninjas Employee</li>
+                        
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <!-- Right Column -->
+            <!-- Put right column physical width calculations here: 
+
+                 Physical right column width =
+                    224px -> content width
+                     36px -> padding (18px left, 18px right)
+                     14px -> border (7px left, 7px right)
+                 +   36px -> margin (18px left, 18px right)
+                ___________
+                    310px
+
+            -->
+            <div class="rightColumn">
+                
+                <h4>Technologies</h4>
+                
+                <hr>
+                
+                <ul>
+                    <li>N/A</li>
+                    
+                    <li>(No Technologies Known Currently)
+                    </li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        <h4>Last updated at: October 26, 2020</h4>
+        
+        <!-- The nav bar was created using the tags <div> and <a>. This idea was borrowed from: https://www.w3schools.com/howto/howto_js_topnav.asp 
+        -->
+        <!-- <div id="navbar" class="clear">
+            <a href="RconzcWebServersF20.html" class="name">Ryan Orf</a>
+            <a href="RconzcColumnsF20.html" class="name" id="current">Skills</a>
+            <a href="RconzcTablesF20.html" class="name">Classes Taken</a>
+            <a href="RconzcProjectsF20.html" class="name">Projects</a>
+        </div> -->
+        <!-- reference code end -->
+        
+    </body>
+    
+</html>

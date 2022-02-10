@@ -1,0 +1,311 @@
+<!--
+    Name: Ryan Orf
+    Pawprint: rconzc
+    Date: October 3, 2020
+    Challenge: To-Do List F20
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Required meta tag for Bootstrap CSS retrieved from the link:
+        https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- reference code end -->
+        <title>RconzcToDoListF20</title>
+        <!-- Bootstrap CSS retrieved from the document "bootstrap-template.html" provided on Canvas for this Challenge, which was retrieved from the link:
+        https://getbootstrap.com/docs/4.0/getting-started/introduction/#css
+        -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <!-- reference code end -->
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <style>
+            #title {
+                margin: 25px auto;
+                text-align: center;
+            }
+            body {
+                margin-top: 80px;
+            }
+            table {
+                height: 400px;
+            }
+            #label {
+                margin: 10px auto 0 auto;
+                text-align: center;
+            }
+            .forFlex {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+            }
+            #toggle {
+                font-weight: bold;
+                background-color: black;
+                border: 2px solid purple;
+                color: white;
+                margin: 10px;
+            }
+            #link {
+                margin: 10px;
+                
+            }
+            .addMenu {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                border: 2px solid limegreen;
+                background-color: white;
+                padding: 10px;
+                margin: 0 20px 20px 20px;
+            }
+            .addMenu>div {
+                padding: 5px;
+            }
+            #add {
+                font-weight: bold;
+                color: limegreen;
+                border: 2px solid limegreen;
+                background-color: white;
+            }
+            #clear {
+                font-weight: bold;
+                color: red;
+                border: 2px solid red;
+                background-color: white;
+            }
+            
+            /*.name {
+                font-size: 30px;
+                font-family: cursive;
+                color: crimson;
+            }
+            #navbar {
+                background-color: gold;
+                width: 100%;
+                position: fixed; 
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                padding: 0px;
+
+            }       */
+    /* Floating each hyperlink left in the nav bar, setting text-         decoration to none, setting text-align to center, and the padding   for each a within the id nav bar was borrowed from:
+        https://www.w3schools.com/howto/howto_js_topnav.asp
+    */
+            /*#navbar a {
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }*/
+        /* reference code end */       
+        /* The pseudo-class hover and changing both the background-color and color when a "button" is hovered over was borrowed from:
+        https://www.w3schools.com/howto/howto_js_topnav.asp
+        */
+            /*#navbar a:hover {
+                background-color: aliceblue;
+                color: rebeccapurple;
+            }*/
+            /* reference code end */
+
+            /*.current {
+                background-color: rebeccapurple;
+                color: aliceblue;
+            }*/
+            
+            .clear:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+        </style>
+        <script src="jslibs/jquery-2.1.4.min.js"></script>
+        <script src="navbar.js"></script>
+        <script>
+            var i = 0;
+            function changeTheme() {
+                var mode = document.getElementById("toggle").value;
+                if(mode == "light")
+                {
+                    document.getElementById("toggle").value = "dark";
+                    document.getElementById("toggle").innerHTML = "Light";
+                    $(".background").css({"background-color": "black", "color": "white"});
+                    $("#toggle").css({"background-color": "white", "color": "black", "border-color": "limegreen"});
+                    $(".addMenu").css({"background-color": "black", "color": "white", "border-color": "purple"});
+                    $("#add").css("background-color", "black");
+                    $("#clear").css("background-color", "black");
+                }
+                else {
+                    document.getElementById("toggle").value = "light";
+                    document.getElementById("toggle").innerHTML = "Dark";
+                    $(".background").css({"background-color": "white", "color": "black"});
+                    $("#toggle").css({"background-color": "black", "color": "white", "border-color": "purple"});
+                    $(".addMenu").css({"background-color": "white", "color": "black", "border-color": "limegreen"});
+                    $("#add").css("background-color", "white");
+                    $("#clear").css("background-color", "white");
+                }
+            }
+            function updatePriority() {
+                var priority = document.getElementById("priority").value;
+                document.getElementById("numStars").innerHTML = priority;
+            }
+            /* Code for checking current date to selected date using JavaScript retrieved from:
+                https://stackoverflow.com/questions/20188317/how-to-compare-the-date-part-alone-from-a-date-time-value/34742886*/
+            function checkDate() {
+                var current = new Date();
+                var date = new Date(document.getElementById("date").value);
+                var currentOnly = new Date(current.getFullYear(), current.getMonth(), current.getDate() - 1);
+                var dateOnly = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+                if(dateOnly < currentOnly)
+                {
+                    alert("Please select a valid date!");
+                    $("#date").val("");
+                }  
+            }
+            /* end of reference code */
+            /* Code for adding row and data cells to tbody of table using jQuery retrieved from:
+                https://stackoverflow.com/questions/171027/add-table-row-in-jquery/468240#468240*/
+            function addToList() {
+                var stars = "***";
+                var numStars = document.getElementById("priority").value;
+                if(numStars == "0"){
+                    stars = "";
+                }
+                if(numStars == "1"){
+                    stars = "*";
+                }
+                if(numStars == "2"){
+                    stars = "**";
+                }
+                if(numStars == "3"){
+                    stars="***";
+                }
+                if(numStars == "4"){
+                    stars = "****";
+                }
+                if(numStars == "5"){
+                    stars = "*****";
+                }
+                if(document.getElementById("item").value == "" || document.getElementById("dropDown").value == "disabled" || document.getElementById("date").value == "")
+                {
+                    alert("All fields must be filled in!");
+                }
+                else {
+                    i++;
+                    var rowClass = "row" + i;
+                    $("tbody").append("<tr class=" + rowClass + "><td>" + document.getElementById("item").value + "</td><td>" + document.getElementById("dropDown").value + "</td><td>" + stars + "</td><td>" + document.getElementById("date").value + "</td><td><input type='checkbox' name='row' value='notDone' class=" + rowClass + " onchange='deleteRow(" + i + ")'>Done</input></td></tr>");
+                    clearCurrent();
+                }
+            }
+            /* end of reference code */
+            function clearCurrent() {
+                $("#item").val("");
+                $("#dropDown").val("disabled");
+                $("#priority").val("3");
+                document.getElementById("numStars").innerHTML = "3";
+                $("#date").val("default");
+            }
+            function deleteRow(x) {
+                var rowClass = ".row" + x;
+                $(rowClass).remove();
+            }
+        </script>
+    </head>
+    <body class="background" onload="addCurrent('')">
+        <h1 id="title">Chores To-Do List</h1>
+        <!-- All Bootstrap CSS table classes retrieved from the link: 
+        https://getbootstrap.com/docs/4.0/content/tables/
+        -->
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered table-sm">
+            <!-- reference code end -->
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Priority</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <h5 id="label">Add to To-Do List:</h5>
+        <div>
+            <form>
+                <div class="addMenu">
+                    <div>
+                        <input id="item" type="text" name="item" placeholder="Title" maxlength="20" value="">
+                    </div>
+                    <div>
+                        <select id="dropDown" name="dropDown">
+                            <option value="disabled" disabled selected>Type</option>
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon">Afternoon</option>
+                            <option value="Night">Night</option>
+                            <option value="All Day">All Day</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="priority">Priority:</label>
+                        <input id="priority" type="range" name="priority" min="0" max="5" onchange="updatePriority()" value="3">
+                        <label id="numStars" for="priority">3</label>
+                    </div>
+                    <div>
+                        <input id ="date" type="date" name="date" onchange="checkDate()" value="">
+                    </div>
+                    <div>
+                        <button id="add" type="button" onclick="addToList()" value="add">Add To List</button>
+                    </div>
+                    <div>
+                        <button id="clear" type="button" onclick="clearCurrent()" value="clear">Clear Form</button>
+                    </div>
+                </div>
+                <div class="forFlex">
+                    <button id="toggle" type="button" onclick="changeTheme()" value="light">Dark</button>
+                </div>
+            </form>
+        </div>
+        <a id="link" href="RconzcProjectsF20.html">Back to Projects</a>
+        
+        <!-- The nav bar was created using the tags <div> and <a>. This idea was borrowed from: https://www.w3schools.com/howto/howto_js_topnav.asp 
+        -->
+          <!-- <div id="navbar" class="clear">
+            <a href="RconzcWebServersF20.html" class="name">Ryan Orf</a>
+            <a href="RconzcColumnsF20.html" class="name">Skills</a>
+            <a href="RconzcTablesF20.html" class="name">Classes Taken</a>
+            <a href="RconzcProjectsF20.html" class="name" >Projects</a>
+        </div> -->
+        <!-- reference code end -->
+        
+        <!-- Double click script obtained from:
+             https://api.jquery.com/dblclick/-->
+        <script>
+            $("#title").dblclick(function(){
+                /* prompt code obtained from:
+                    https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt*/
+                var newTitle = prompt("Please enter a new title:", "New Title");
+                if(newTitle == null || newTitle == "")
+                {
+                    alert("Not a Valid Title");
+                }
+                else {
+                    document.getElementById("title").innerHTML = newTitle;
+                }
+                /* end of reference code */
+            })
+        </script>
+        <!-- end of reference code -->
+    </body>
+</html>
