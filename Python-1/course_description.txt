@@ -1,1 +1,3 @@
 Python 1 taught concepts of coding and how to implement them in Python.
+
+Enrolled in at university in Spring Semester of 2021.
