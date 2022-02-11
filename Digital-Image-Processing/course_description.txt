@@ -1,2 +1,4 @@
 Digital Image Processing taught how images are interpreted by the computer (starting at the pixel level) and how to implement important concepts of digital image processing
 (without using the built-in OpenCV functions) in C++ and either Python or MATLAB.
+
+Enrolled in at university in Fall Semester of 2021.
