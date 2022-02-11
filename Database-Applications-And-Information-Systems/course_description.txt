@@ -1,2 +1,4 @@
 Database Applications and Information Systems taught in-depth about database functionalities and queries, covered fundamentals of a DBMS, and instructed how to implement these
 discussed ideas in SQL.
+
+Enrolled in at university in Spring Semester of 2021.
