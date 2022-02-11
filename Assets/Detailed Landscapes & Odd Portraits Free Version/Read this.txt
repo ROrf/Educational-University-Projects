@@ -1,0 +1,33 @@
+Thanks for downloading Detailed Portrait Textures & Materials!
+
+                     ------------------
+
+All images belong to the photographer, Argiris Georgantis and 
+they are free to use for commercial use.
+
+With the use of Materialize tool, real life screenshots are 
+now fully mapped.
+
+Free version includes:
+5 materials with 20 maps.
+Texture maps (3872 x 2592 PNG):
+- Albedo
+- Normal
+- Metallic
+- Height
+- Ambient Occlusion
+
+
+Most pictures are taken in various places in Greece.
+
+                     ------------------
+
+These materials make a nice combination with the Classic Picture
+Frame asset that is used for my promotion video on Youtube. 
+And it's free!
+
+Classic Picture Frame
+https://assetstore.unity.com/packages/3d/props/furniture/classic-picture-frame-59038
+
+Let me know your thoughts at askgeogames@gmail.com
+ 
