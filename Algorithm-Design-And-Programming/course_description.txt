@@ -1,0 +1,4 @@
+Algorithm Design and Programming taught the basics of coding, how to develop algorithms, and how to implement programs. This is considered the introductory course for
+Computer Science at my university, and the course was taught in C.
+
+Enrolled in at university in Fall Semester of 2019.
