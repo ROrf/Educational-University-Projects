@@ -1,2 +1,2 @@
 Please go to the "vr-final-project" branch in order to find my Final Project for Intro to Virtual Reality An additional note: some Assets were unable to uploaded to Github as the
-files were too large in size. I apologize for the inconvenience.
+files were too large in size. I apologize for the inconvenience (go back to "Educational-University-Projects", the main page, before changing branches).
