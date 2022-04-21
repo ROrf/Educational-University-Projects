@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -Wall -Wextra -Wshadow -Werror  -rdynamic CMakeFiles/assignment3_test.dir/test/tests_main.cpp.o  -o assignment3_test  -Wl,-rpath,/home/rconzc/cs4520/a3/a3_process_scheduling_rconzc/build libtest.so -lgtest -lpthread libdyn_array.so libprocess_scheduling.so 
