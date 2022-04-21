@@ -9,6 +9,8 @@
 #define RR "RR"
 #define SJF "SJF"
 
+/* NOTE (PLEASE READ): I got 24 of 25 points off for this not giving the correct times. So either I miscalculated those values in the .c file, or more needs to be done in this file */
+
 int main(int argc, char **argv) 
 {
     if (argc < 3 || !strstr(argv[1], "PCBs.bin")) // strstr() is a function that finds the substring specified in the first argument. This if checks if less than the sufficient number of arguments were provided or if a file other than PCBs.bin was input
