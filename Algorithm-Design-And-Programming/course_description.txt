@@ -3,4 +3,4 @@ Computer Science at my university, and the course was taught in C.
 
 Enrolled in at university in Fall Semester of 2019.
 
-I am still in the process of gathering my coding assignments for this class.
+
