@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++0x -g -Wall -Werror   CMakeFiles/allocation_tester.dir/test/tests.cpp.o CMakeFiles/allocation_tester.dir/src/allocation.c.o  -o allocation_tester  -lgtest -lpthread 

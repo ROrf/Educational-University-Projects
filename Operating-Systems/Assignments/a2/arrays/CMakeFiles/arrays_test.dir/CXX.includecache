@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rconzc/cs4520/a2/a2_c_refresher_rconzc/arrays/include/arrays.h
+stdbool.h
+-
+stddef.h
+-
+sys/types.h
+-
+
+/home/rconzc/cs4520/a2/a2_c_refresher_rconzc/arrays/test/tests.cpp
+stdio.h
+-
+../include/arrays.h
+/home/rconzc/cs4520/a2/a2_c_refresher_rconzc/arrays/include/arrays.h
+gtest/gtest.h
+-
+
