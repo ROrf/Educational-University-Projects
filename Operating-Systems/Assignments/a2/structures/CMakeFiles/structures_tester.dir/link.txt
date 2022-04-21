@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++0x -g -Wall -Werror   CMakeFiles/structures_tester.dir/test/test.cpp.o CMakeFiles/structures_tester.dir/src/structures.c.o  -o structures_tester  -lgtest -lpthread 
