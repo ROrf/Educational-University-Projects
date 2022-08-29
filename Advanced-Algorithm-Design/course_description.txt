@@ -1,3 +1,0 @@
-Advanced Algorithm Design taught about fundamental algorithms and data structures (such as graphs and trees), and explained how to evaluate runtime efficiency in Big-O notation.
-
-Enrolled in at university in Fall Semester of 2020.
