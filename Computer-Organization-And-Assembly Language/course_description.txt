@@ -1,4 +1,0 @@
-Computer Organization and Assembly Language taught computer concepts such as Data Registers, Address Buses, and Program Counters, and how to implement code at the assembly language
-level, specifically on an M68HC11.
-
-Enrolled in at university in Spring Semester of 2021.
