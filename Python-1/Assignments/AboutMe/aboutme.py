@@ -1,6 +1,0 @@
-print('Name: Ryan Orf')
-print('Hello, my name is Ryan, and this is my fourth semester of college!')
-print('I am a Computer Science major.')
-print('Some of my hobbies include: video games, movies, football, basketball, and volleyball!')
-print('Testing if \t tabs and \n new lines work in Python...')
-print('Have a good day!')
