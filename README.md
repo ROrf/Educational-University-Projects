@@ -1,2 +1,2 @@
 # Educational-University-Projects
-These are projects I have personally completed entirely myself or collaborated on through my University pursuit of a Computer Science degree.
+This branch consists of my Game Development final project that I completed with one other CS students. Note that some Assets are missing as they were too large in file size to be uploaded to Github.
