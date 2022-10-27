@@ -1,0 +1,6 @@
+Capstone II taught students how to more realistically work on a programming project with a team, similar to what a post-graduation career may look like. Aspects of the
+course include design prototyping, testing, evaluation, documentation, and presentation.
+
+Please visit the following link to visit our work-in-progress repository for our app: https://github.com/MalekNecibi/mu-capstone-roommate
+
+Enrolled in at university in Fall Semester of 2022.
