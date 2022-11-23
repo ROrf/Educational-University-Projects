@@ -1,0 +1,4 @@
+Computer Networks I taught in-depth about concepts and terms related to data communications and computer networking, such as basic protocols, routing algorithms, 
+congestion avoidance, and local networks.
+
+Enrolled in at university in Fall Semester of 2022.
