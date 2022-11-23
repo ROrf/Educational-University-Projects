@@ -1,0 +1,4 @@
+Principels of Programming Languages taught in-depth about the structure, design, and implementation of programming languages, with topics such as regular expressions,
+context-free grammars, parse trees and tables, and functional andn logic programming.
+
+Enrolled in at university in Fall Semester of 2022.
